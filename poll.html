@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Poll</title>
+    <link rel="stylesheet" href="poll.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Create Your Poll</h2>
+        <form id="pollForm">
+            <div class="form-group">
+                <label for="pollQuestion">Poll Question:</label>
+                <input type="text" id="pollQuestion" class="form-control" required placeholder="Enter your question">
+            </div>
+
+            <div id="pollOptionsContainer">
+                <div class="form-group">
+                    <label for="pollOption1">Option 1:</label>
+                    <input type="text" id="pollOption1" class="form-control" required placeholder="Enter an option">
+                </div>
+            </div>
+
+            <button type="button" id="addOptionBtn" class="btn btn-primary mb-3">Add Another Option</button>
+            <button type="submit" class="btn btn-success">Create Poll</button>
+        </form>
+    </div>
+    <script src="poll.js"></script>
+</body>
+</html>
